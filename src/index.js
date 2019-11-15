@@ -1,7 +1,8 @@
 import m from "mithril";
 
 const root = document.getElementById("app");
-
+m.route.mode = 'pathname';
+m.route.prefix = '#';
 const Giphy = {
   oninit: function () {
     this.loadGif();
@@ -28,9 +29,8 @@ const Giphy = {
           m("p", '...')
         ]
       ),
-      m('p', m('a', {
-        href: '#!/not-found'
-      }, 'EXPLORE'))
+      m('p', m("a[href='#/not-found']", { config: m.route }, "EXPLORE")),
+      
     ]);
   }
 }
@@ -41,13 +41,12 @@ const NotFound = {
       m('h1', 'Error'),
       m('p', 'This page was not found'),
       m('a', {
-        href: '#!/'
+        href: '#/'
       }, '<- Go back')
     ])
   }
 }
 
-m.route.mode = 'pathname';
 m.route(root, '/not-found', {
   '/': Giphy,
   '/not-found': NotFound,
