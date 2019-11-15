@@ -1,0 +1,21 @@
+{
+  "name": "spirit-fish-test-mithril",
+  "version": "1.0.0",
+  "description": "\"A test app built using mithril js\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack src/index.js --output bin/app.js -d --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alicia@sanctuary.computer",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/mithril": "^2.0.2",
+    "http-server": "^0.11.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
