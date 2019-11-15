@@ -46,7 +46,8 @@ const NotFound = {
     ])
   }
 }
-m.route.prefix = '#!';
+
+m.route.mode = 'pathname';
 m.route(root, '/not-found', {
   '/': Giphy,
   '/not-found': NotFound,
