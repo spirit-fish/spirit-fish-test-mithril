@@ -3,6 +3,7 @@ import m from "mithril";
 const Giphy = {
   oninit: function () {
     this.loadGif();
+    document.title = 'Only The BEST';
   },
   loadGif: function() {
     m.request({
