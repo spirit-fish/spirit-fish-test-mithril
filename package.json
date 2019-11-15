@@ -4,7 +4,8 @@
   "description": "\"A test app built using mithril js\"",
   "main": "index.js",
   "scripts": {
-    "start": "webpack src/index.js --output bin/app.js -d --watch",
+    "dev": "budo --live --open index.js",
+    "build": "webpack src/index.js --output bin/app.js -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "alicia@sanctuary.computer",
@@ -14,7 +15,7 @@
   },
   "devDependencies": {
     "@types/mithril": "^2.0.2",
-    "http-server": "^0.11.1",
+    "budo": "^11.6.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
