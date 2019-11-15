@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "budo --live --open index.js",
+    "start": "webpack src/index.js --output bin/app.js -d --watch",
     "build": "webpack src/index.js --output bin/app.js -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,6 @@
 # SpiritFish Test :: Mithril.js
 
-## Devevlop
+## Develop
 ```
 yarn
 yarn dev
